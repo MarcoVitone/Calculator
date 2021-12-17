@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        height: 480px;
+    }
+    
+
+    &-display{
+        width: 90%;
+        height: 70px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: auto;
+        background-color: antiquewhite;
+        border: 2px solid black;
+        margin-top: 50px;
+        
+        input{
+            width: 100%;
+            height: 100%;
+            text-align: end;
+            font-size: xx-large;
+        }
+    }
+
+    &-calc{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        input{
+            height: 60px;
+            width: 90px;
+            font-size: 20px;
+        }
+
+        input:not(:nth-last-of-type(1)){
+            margin-right: 10px;
+        }
+
+        input:nth-last-of-type(1), input:nth-last-of-type(2), input:nth-last-of-type(3){
+            width: 45px;
+        }
+
+        &-first-line{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-second-line{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+        }
+
+        &-third-line{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+        }
+
+        &-fourth-line{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+
+            input:nth-last-of-type(2), input:nth-last-of-type(3){
+                width: 90px;
+            }
+            
+            input:last-of-type{
+                width: 154px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <form name="form">
+            <div class="container-display">
+                <input type="text" class="area" name="area" value="" placeholder="0">
+            </div>
+            <div class="container-calc">
+                <div class="container-calc-first-line">
+                    <input type="button" value="7" onclick="add(7)">
+                    <input type="button" value="8" onclick="add(8)">
+                    <input type="button" value="9" onclick="add(9)">
+                    <input type="button" value="DEL" onclick="del()">
+                    <input type="button" value="C" onclick="canc()">
+                    <input type="button" value="^²" onclick="pow2()">
+                </div>
+                <div class="container-calc-second-line">
+                    <input type="button" value="4" onclick="add(4)">
+                    <input type="button" value="5" onclick="add(5)">
+                    <input type="button" value="6" onclick="add(6)">
+                    <input type="button" value="*" onclick="addOp('*')">
+                    <input type="button" value="/" onclick="addOp('/')">
+                    <input type="button" value="^³" onclick="pow3()">
+                </div>
+                <div class="container-calc-third-line">
+                    <input type="button" value="1" onclick="add(1)">
+                    <input type="button" value="2" onclick="add(2)">
+                    <input type="button" value="3" onclick="add(3)">
+                    <input type="button" value="+" onclick="addOp('+')">
+                    <input type="button" value="-" onclick="addOp('-')">
+                    <input type="button" value="√" onclick="sqrt()">
+                </div>
+                <div class="container-calc-fourth-line">
+                    <input type="button" value="0" onclick="add(0)">
+                    <input type="button" value="00" onclick="add('00')">
+                    <input type="button" value="." onclick="add('.')">
+                    <input type="button" value="=" onclick="ris('=')">
+                    
+                </div>
+            
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
